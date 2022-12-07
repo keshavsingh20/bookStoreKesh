@@ -1,0 +1,340 @@
+/*
+    Author: Young Minds
+    Theme: Book Store Web Design
+    Version: 1.0
+*/
+/*css for all content */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: #222f3e;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+.img-responsive{
+    width: 100%;
+    height: 200px;
+}
+
+.img-responsive-logo{
+    width: 100%;
+}
+
+.img-curve{
+    border-radius: 15px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ee5253;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.text-white{
+    color:white;
+}
+
+.clearfix{
+    clear:both;
+    float:none;
+}
+
+.btn{
+     padding: 1%;
+     border:none;
+     font-size: 1rem;
+     border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: #ee5253;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: green;
+}
+
+.float-container{
+    position:relative;
+}
+
+.float-text{
+    position:absolute;
+    bottom:40px;
+    left:35%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+#creator{
+    font-weight: bold;
+    color: #1B1464;
+}
+#creator:hover{
+    color: red;
+}
+
+
+/* css for navbar section */
+.logo{
+    width: 10%;
+    float: left;
+}
+
+.menu{
+line-height: 50px ;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    color:#0abde3 ;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color: #ff6b6b; 
+}
+
+/* css for book-search section */
+.book-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.book-search input[type="search"]{
+    width:50%;
+    padding:1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* css for category section */
+.categories{
+    padding:4% 0;
+}
+
+.box-3{
+    width:28%;
+    float:left;
+    margin: 2%;
+    border:none;
+}
+
+/* css for explore book section */
+.book-menu{
+    background-color: #ececec;
+    padding:4% 0;
+}
+
+.book-menu-box{
+    width:43%;
+    margin:1%;
+    float: left;
+    padding:2%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.book-menu-img{
+    width:25%;
+    float:left;
+}
+
+.book-menu-description{
+    width: 65%;
+    float:left;
+    margin-left: 8%;
+}
+
+.book-price{
+    font-size: 1.2rem;
+    margin:1% 0;
+}
+
+.book-detail{
+    font-size:0.8rem;
+    color:#576574;
+}
+
+/* css for social section */
+.social ul{
+    list-style-type:none ;
+}
+
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.social-logo{
+    height: 50px;
+    width: 50px;
+}
+
+/* css for footer */
+.container a{
+    color: yellow;
+}
+.container a:hover{
+    color:red;
+}
+
+/* for order secton */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.book-order-menu{
+    background-color: cyan;
+    margin: 1% 0;
+    width: 100%;
+}
+
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+.success{
+    padding: 2%;
+    color: #2ed573;
+}
+
+.error{
+    padding: 2%;
+    color: #ff4757;
+}
+
+/*Css for contact us page */
+.contact{
+    margin: 0 auto;
+    padding: 1%;
+    background-color: #ececec;
+}
+.contact section{
+    margin-left : 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+.contact section h1{
+    padding: 2% ;
+    font-size: 50px;
+    color: rgb(27, 97, 248);
+}
+.contact section h3{
+    padding: 0% ;
+}
+.contact section p{
+    padding: 2% ;
+}
+
+
+/* Css for mobile size and smaller screen */
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu ul{
+        text-align: center;
+    }
+    .h2{
+       margin-bottom: 15%; 
+    }
+    .book-search{
+        padding: 10% 0;
+    }
+    .book-menu-img{
+        width:30%;
+        float:left;
+        height:100 px;
+    }
+    .book-search input[type="Search"]{
+        width: 90%;
+        padding:2%;
+        margin: 5%; 
+    }
+    .categories{
+        padding: 10%;
+    }
+    .btn{
+        width: 90%;
+        padding: 2%;
+        margin: 1%;
+    }
+    .box-3{
+        width: 95%;
+        margin: 2% auto;
+    }
+    .book-menu{
+        padding: 20% 0;
+        margin: 2%;
+    }
+    .book-menu-box{
+        width: 90%;
+        padding: 8%;
+        margin-bottom: 5%;
+    }
+    .social-logo{
+        padding: 5% 0;
+        margin: 1%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
